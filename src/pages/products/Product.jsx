@@ -4,7 +4,7 @@ import Counter from "./Couter";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../../features/cartSlice";
+import { addToCart } from "../../features/Slice";
 import { productdata } from "../../data";
 
 const Product = ({ data }) => {

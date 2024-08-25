@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { removeCartItem } from '../features/cartSlice'
+import { removeCartItem } from '../features/Slice'
 
 const products = [
     {
