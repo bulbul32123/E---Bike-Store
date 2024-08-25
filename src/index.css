@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flexCenter {
+    @apply flex justify-center items-center
+  }
+
+  .flexBetween {
+    @apply flex justify-between items-center
+  }
+
+  .transitions {
+    @apply transition-all duration-500 ease-in-out
+  }
+
+  .imgSelectNone {
+    @apply pointer-events-none select-none
+  }
+
+  .imgObject {
+    @apply object-cover object-center
+  }
+
+  .h-w-full {
+    @apply h-full w-full
+  }
+}
+
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.app {
+  background: linear-gradient(124.253deg, #EBF3F5 10%, #C5E2F0 100%);
+}
+
+.grident {
+  background: linear-gradient(137.165deg, #D8E6EF 8%, #B4D8E4 100%);
+}
+
+.slideImage {
+  height: 35rem;
+  width: 35rem;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+  z-index: 2;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  display: flex;
+
+}
+
+.indicator {
+  background-color: white;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 0 0.2rem;
+  border: 2px solid #86C4D9 !important;
+}
+
+.opacityBur {
+  position: absolute;
+  top: -7rem;
+  z-index: 2;
+  right: 15%;
+  filter: blur(200px);
+  width: 300px;
+  height: 309px;
+  border-radius: 50%;
+  background: rgba(0, 255, 209, 20%);
+}
+
+.opacityBur2 {
+  position: absolute;
+  top: 10%;
+  z-index: 2;
+  left: -15%;
+  filter: blur(200px);
+  width: 300px;
+  height: 309px;
+  border-radius: 50%;
+  background: #6CC6BC;
+}
+
+.unActive-indicator {
+  border: 0px solid black !important;
+}
+
+
+.side-part-grident {
+  background: linear-gradient(100deg, #9AE0D3 0%, #35A7A0 95%);
+}
+
+.side-part-bottom-grident {
+  background: linear-gradient(180deg, #89C8DD 0%, #73ADC1 100%);
+}
+
+
+
+/* Bike Detail */
+
+.bike-detail::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  right: 120px;
+  border: 10px solid transparent;
+  border-bottom-color: #89C8DD;
+}
+
+@media screen and (max-width: 780px) {
+  .bike-detail::before {
+    content: " ";
+    position: absolute;
+    top: -21px;
+    right: 70px;
+    border: 0px solid transparent !important;
+    border-bottom-color: #89C8DD;
+  }
+
+}
+
+
+
+.brake-detail::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 140px;
+  border: 10px solid transparent;
+  border-bottom-color: #89C8DD;
+}
+
+@media screen and (max-width: 780px) {
+  .brake-detail::before {
+    content: " ";
+    position: absolute;
+    top: -21px;
+    right: 70px;
+    border: 0px solid transparent !important;
+    border-bottom-color: #89C8DD;
+  }
+
+}
+
+.light-detail::before {
+  content: " ";
+  position: absolute;
+  top: -21px;
+  left: 160px;
+  border: 10px solid transparent;
+  border-bottom-color: #89C8DD;
+}
+
+@media screen and (max-width: 780px) {
+  .light-detail::before {
+    content: " ";
+    position: absolute;
+    top: -21px;
+    right: 70px;
+    border: 0px solid transparent !important;
+    border-bottom-color: #89C8DD;
+  }
+
+}
+
+.wheel-detail::before {
+  content: " ";
+  position: absolute;
+  top: -21px;
+  left: 120px;
+  border: 10px solid transparent;
+  border-bottom-color: #89C8DD;
+}
+
+@media screen and (max-width: 780px) {
+  .wheel-detail::before {
+    content: " ";
+    position: absolute;
+    top: -21px;
+    right: 70px;
+    border: 0px solid transparent !important;
+    border-bottom-color: #89C8DD;
+  }
+
+}
+
+
+
+
+
+
+/* PRODUCT DETAILS CAROUSEL STYLING CUSTOMIZATION START */
+.slide {
+  /* background: linear-gradient(137.165deg, #D8E6EF 8%, #B4D8E4 100%); */
+}
+
+.productCarousel.carousel-root {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 8px;
+}
+
+.productCarousel.carousel-root .carousel {
+  width: auto;
+}
+
+.productCarousel.carousel-root .carousel.carousel-slider {
+  width: 100%;
+}
+
+.productCarousel.carousel-root .carousel.carousel-slider .slider-wrapper {
+  border-radius: 10px;
+}
+
+.productCarousel.carousel-root .carousel .thumbs-wrapper {
+  margin: 0;
+}
+
+.productCarousel.carousel-root .carousel .thumb {
+  height: 60px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.productCarousel.carousel-root .carousel .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.productCarousel.carousel-root .carousel .thumb:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #86C4D9;
+  opacity: 0;
+}
+
+.productCarousel.carousel-root .carousel .thumb.selected,
+.productCarousel.carousel-root .carousel .thumb:hover {
+  border: 0;
+}
+
+.productCarousel.carousel-root .carousel .thumb:hover:after,
+.productCarousel.carousel-root .carousel .thumb.selected:after {
+  opacity: 0.2;
+}
+
+.productCarousel .control-arrow {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .productCarousel.carousel-root {
+    flex-direction: column;
+  }
+
+  .productCarousel.carousel-root .carousel .thumb {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .productCarousel.carousel-root .carousel .thumbs {
+    transform: none !important;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+  }
+
+  .productCarousel.carousel-root .carousel .thumb {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
