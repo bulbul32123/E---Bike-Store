@@ -8,7 +8,7 @@ export default function LeftSide() {
                 <h1 className="title-font md:text-7xl text-3xl mb-4 font-bold">FUTURE</h1>
                 <p className="mb-8 mt-5 leading-relaxed max-w-[200px] text-[#42454A]">Simple and sleek design with users in mind.</p>
                 <div className="">
-                    <button className="inline-flex text-white bg-[#6EDACB] uppercase border-2 border-[#5EC6B8] py-2 px-6 focus:outline-none text-sm rounded ">Pre-Order</button>
+                    <button className="inline-flex text-white bg-[#6EDACB] uppercase border-2 border-[#5EC6B8] py-2 px-6 focus:outline-none text-sm rounded ">Order Now</button>
                 </div>
             </div>
             <div className="md:hidden absolute top-0 w-full h-full left-0 ">
